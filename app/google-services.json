@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "512702906606",
+    "project_id": "reto1panaderia",
+    "storage_bucket": "reto1panaderia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512702906606:android:889a77351bc0e7ce1733ff",
+        "android_client_info": {
+          "package_name": "com.aurik.unalreto1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCImXqerLHgrBxSPhoF7f6REfPEEJBuolE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

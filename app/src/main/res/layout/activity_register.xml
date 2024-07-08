@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FAECE7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:id="@+id/textViewRegistrate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/registro"
+                            android:textColor="#795548"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp" />
+
+                        <EditText
+                            android:id="@+id/editTextNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:padding="10dp"
+                            android:ems="10"
+                            android:hint="@string/nombre" />
+
+                        <EditText
+                            android:id="@+id/editTextApellido"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:padding="10dp"
+                            android:ems="10"
+                            android:hint="@string/apellido" />
+
+                        <EditText
+                            android:id="@+id/editTextCedula"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:ems="10"
+                            android:hint="@string/cedula" />
+
+                        <EditText
+                            android:id="@+id/editTextCelular"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:padding="10dp"
+                            android:ems="10"
+                            android:hint="@string/celular" />
+
+                        <EditText
+                            android:id="@+id/editTextDireccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:padding="10dp"
+                            android:ems="10"
+                            android:hint="@string/direccion" />
+
+                        <EditText
+                            android:id="@+id/editTextCorreo"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:padding="10dp"
+                            android:hint="@string/correo_electronico"
+                            android:inputType="textEmailAddress" />
+
+                        <EditText
+                            android:id="@+id/editTextContrasenaR"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:padding="10dp"
+                            android:hint="@string/contrasena"
+                            android:inputType="textPassword" />
+
+                        <EditText
+                            android:id="@+id/editTextContrasenaConfiR"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bordes"
+                            android:padding="10dp"
+                            android:hint="@string/confirma_contrasena"
+                            android:inputType="textPassword" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" />
+
+                        <RadioButton
+                            android:id="@+id/terminosYCondiciones"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/acepto_t_rminos_y_condiciones"/>
+
+                        <RadioButton
+                            android:id="@+id/trataimentosDeDatos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/acepto_pol_tica_para_tratamientos_de_datos" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchAdmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/admin" />
+
+                        <Button
+                            android:id="@+id/buttonRegistrar"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="#795548"
+                            android:text="@string/registro" />
+
+                        <Button
+                            android:id="@+id/buttonIngresar"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="#795548"
+                            android:text="@string/ingresar" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
